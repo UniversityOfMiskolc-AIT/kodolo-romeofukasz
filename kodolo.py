@@ -9,20 +9,20 @@ import sys
 import argparse
 
 
-def encode(input):
+def encode(input_string):
     """Encodes a string to comma seperated integers.
 
     Keyword arguments:
-    input -- the string input to encode
+    input_string -- the string input to encode
     """
 
-    if not isinstance(input, str):
+    if not isinstance(input_string, str):
         raise TypeError("The input of encode must be a string")
 
-    if not input.isascii():
+    if not input_string.isascii():
         raise ValueError("The input must only contain ascii characters")
 
-    ascii_codes = [ord(char) for char in input]  # the ascii codes of the input's characters
+    ascii_codes = [ord(char) for char in input_string]  # the ascii codes of the input's characters
     result_codes = [ascii_codes[0]]  # the first encoded number is the characters ascii code
 
     for index, value in enumerate(ascii_codes[1:], start=1):
@@ -49,17 +49,17 @@ def string_is_integer(string):
     return is_unsigned_integer or is_signed_integer
 
 
-def decode(input):
+def decode(input_string):
     """Decodes comma seperated integers to the original string.
 
     Keyword arguments:
-    input -- the string input to decode
+    input_string -- the string input to decode
     """
 
-    if not isinstance(input, str):
+    if not isinstance(input_string, str):
         raise TypeError("The input of decode must be a string")
 
-    list_of_string_elements = input.replace(" ", "").split(',')
+    list_of_string_elements = input_string.replace(" ", "").split(',')
 
     if not all([string_is_integer(element) for element in list_of_string_elements]):
         raise ValueError("Decoding input must be comma seperated integers")
