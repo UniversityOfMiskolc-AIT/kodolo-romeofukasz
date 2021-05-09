@@ -11,7 +11,7 @@ pip install -r requirements.pip
 A program futtatása:
 
 ```shell
-python kodolo.py [-h] [--decode] input
+python kodolo.py [--help] [--decode] input
 ```
 
 A tesztek futtatása:
