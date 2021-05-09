@@ -1,6 +1,15 @@
 # Szöveg kódoló/dekódoló
 
-A feladat megoldása python 3.8-as verzióval lett tesztelve.
+A feladat kiírása
+[ezen](http://ait2.iit.uni-miskolc.hu/oktatas/doku.php?id=tanszek:oktatas:minosegmenedzsment_es_informatika:minosegmenedzsment_es_informatika#segedlet_a_gyakorlathoz)
+az oldalon olvasható.
+
+A feladat megoldása során a [PEP8](https://www.python.org/dev/peps/pep-0008/) kódolási konvenciót
+és a [PEP257](https://www.python.org/dev/peps/pep-0257/) docstring konvenciót követtem.
+
+A feladat megoldása [python3.8](https://www.python.org/downloads/release/python-3810/)-as verzióval lett tesztelve.
+
+---
 
 Függőségek telepítése:
 
